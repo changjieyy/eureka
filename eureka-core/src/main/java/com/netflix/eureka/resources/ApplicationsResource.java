@@ -232,7 +232,7 @@ public class ApplicationsResource {
         );
 
         final Response response;
-
+        // 从缓存组件获取增量注册表
         if (acceptEncoding != null && acceptEncoding.contains(HEADER_GZIP_VALUE)) {
              response = Response.ok(responseCache.getGZIP(cacheKey))
                     .header(HEADER_CONTENT_ENCODING, HEADER_GZIP_VALUE)
