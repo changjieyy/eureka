@@ -1301,7 +1301,7 @@ public class DiscoveryClient implements EurekaClient {
     /**
      * Initializes all scheduled tasks.
      */
-    private void invinitScheduledTasks() {
+    private void initScheduledTasks() {
         if (clientConfig.shouldFetchRegistry()) {
             // registry cache refresh timer
             int registryFetchIntervalSeconds = clientConfig.getRegistryFetchIntervalSeconds();
